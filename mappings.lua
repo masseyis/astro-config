@@ -32,9 +32,13 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-u>"] = {"<C-u>zz"},
+    ["<C-d>"] = {"<C-d>zz"}, 
+    ["n"] = {"nzz"},
+    ["N"] = {"Nzz"},
   },
   t = {
     -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
+    ["<esc>"] = {"<C-\\><C-N>"},
   },
 }
