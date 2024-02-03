@@ -13,4 +13,6 @@ return {
   { import = "astrocommunity.editing-support.vim-move"},
   { import = "astrocommunity.editing-support.wildfire-nvim"},
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.pack.terraform"},
+  { import = "astrocommunity.pack.yaml"},
 }
