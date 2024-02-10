@@ -19,7 +19,7 @@ return {
 
   -- Set colorscheme to use
   colorscheme = "catppuccin",
-
+  conceallevel = 1,
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
@@ -82,8 +82,6 @@ return {
     --   },
     -- }
   end,
-
-  -- Mimic nvChad status line
    -- add new user interface icon
   icons = {
     VimIcon = "",
