@@ -52,6 +52,20 @@ return {
     servers = {
       -- "pyright"
     },
+    config = {
+      rust_analyzer = {
+        settings = {
+          -- Add clippy lints for Rust.
+          ["rust-analyzer"] = {
+            checkOnSave = {
+              allFeatures = true,
+              command = "clippy",
+              extraArgs = { "--no-deps" },
+            },
+          },
+        },
+      },
+    },
   },
 
   -- Configure require("lazy").setup() options
